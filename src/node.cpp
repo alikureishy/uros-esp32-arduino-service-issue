@@ -13,15 +13,7 @@
 // ------------------
 // Setup wifi
 // ------------------
-#if __has_include("credentials.h")
-  #include "credentials.h"
-#else
-  // WiFi credentials
-  const char *ssid = WIFI_SSID;
-  const char *password = WIFI_PASS;
-  const char* agent_ip = AGENT_IP;
-  const uint agent_port = AGENT_PORT;
-#endif
+#include "credentials.h"
 
 // ----------------------
 // Error handling macros
